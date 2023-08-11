@@ -1,0 +1,7 @@
+pandasai
+streamlit
+rdkit
+bs4
+selenium
+duckdb
+duckdb-engine

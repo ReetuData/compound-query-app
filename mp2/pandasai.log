@@ -1,0 +1,407 @@
+2023-08-05 15:50:32 [INFO] Question: Find the number of prime numbers in the column, col_3.
+2023-08-05 15:50:32 [INFO] Running PandasAI with openai LLM...
+2023-08-05 15:50:32 [INFO] Prompt ID: 139c63df-f1d1-408c-894f-c8494b7c7afe
+2023-08-05 15:50:46 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Creating the dataframe
+data = {'col_1': [2104, 2848, 3604, 5723, 2353],
+        'col_2': [2339, 8279, 539, 3136, 3411],
+        'col_3': [3607, 6712, 7081, 7249, 352],
+        'col_4': [112, 3694, 690, 6921, 8904],
+        'col_5': [3845, 2698, 3565, 1042, 6268],
+        'col_6': [7082, 548, 5427, 1961, 6349],
+        'col_7': [9056, 22, 3876, 4398, 3193],
+        'col_8': [2232, 882, 4591, 6383, 5369],
+        'col_9': [6122, 9763, 3747, 8603, 9338],
+        'col_10': [740, 7691, 7129, 9141, 187]}
+
+df = pd.DataFrame(data)
+
+# Function to check if a number is prime
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Counting the number of prime numbers in col_3
+prime_count = sum(df['col_3'].apply(is_prime))
+
+prime_count
+                        ```
+                    
+2023-08-05 15:50:46 [INFO] 
+Code running:
+```
+data = {'col_1': [2104, 2848, 3604, 5723, 2353], 'col_2': [2339, 8279, 539, 3136, 3411], 'col_3': [3607, 6712, 7081, 7249, 352], 'col_4': [112, 3694, 690, 6921, 8904], 'col_5': [3845, 2698, 3565, 1042, 6268], 'col_6': [7082, 548, 5427, 1961, 6349], 'col_7': [9056, 22, 3876, 4398, 3193], 'col_8': [2232, 882, 4591, 6383, 5369], 'col_9': [6122, 9763, 3747, 8603, 9338], 'col_10': [740, 7691, 7129, 9141, 187]}
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_count = sum(df['col_3'].apply(is_prime))
+prime_count
+```
+2023-08-05 15:50:46 [INFO] Answer: 4877
+2023-08-05 15:50:46 [INFO] Executed in: 13.779573202133179s
+2023-08-05 16:15:28 [INFO] Question: Find the number of prime numbers in the column, col_3.
+2023-08-05 16:15:28 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:15:28 [INFO] Prompt ID: cd7a9abf-ff46-4090-8ad5-64538cf040d5
+2023-08-05 16:15:28 [INFO] Using cached response
+2023-08-05 16:15:28 [INFO] 
+Code running:
+```
+data = {'col_1': [2104, 2848, 3604, 5723, 2353], 'col_2': [2339, 8279, 539, 3136, 3411], 'col_3': [3607, 6712, 7081, 7249, 352], 'col_4': [112, 3694, 690, 6921, 8904], 'col_5': [3845, 2698, 3565, 1042, 6268], 'col_6': [7082, 548, 5427, 1961, 6349], 'col_7': [9056, 22, 3876, 4398, 3193], 'col_8': [2232, 882, 4591, 6383, 5369], 'col_9': [6122, 9763, 3747, 8603, 9338], 'col_10': [740, 7691, 7129, 9141, 187]}
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_count = sum(df['col_3'].apply(is_prime))
+prime_count
+```
+2023-08-05 16:15:28 [INFO] Answer: 5002
+2023-08-05 16:15:28 [INFO] Executed in: 0.06322503089904785s
+2023-08-05 16:15:28 [INFO] Question: Show me all the rows that contain SMILES strings.
+2023-08-05 16:15:28 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:15:28 [INFO] Prompt ID: d73cca54-50c2-4793-ac9a-f2d6d48c81f0
+2023-08-05 16:15:31 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Compounds'].str.contains('SMILES')]
+                        ```
+                    
+2023-08-05 16:15:31 [INFO] 
+Code running:
+```
+df[df['Compounds'].str.contains('SMILES')]
+```
+2023-08-05 16:15:31 [WARNING] Error executing code (count: 0)
+2023-08-05 16:17:00 [INFO] Question: Find the number of prime numbers in the column, col_3.
+2023-08-05 16:17:00 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:17:00 [INFO] Prompt ID: f0799308-2a0c-4eb2-955d-b199cadbb014
+2023-08-05 16:17:00 [INFO] Using cached response
+2023-08-05 16:17:00 [INFO] 
+Code running:
+```
+data = {'col_1': [2104, 2848, 3604, 5723, 2353], 'col_2': [2339, 8279, 539, 3136, 3411], 'col_3': [3607, 6712, 7081, 7249, 352], 'col_4': [112, 3694, 690, 6921, 8904], 'col_5': [3845, 2698, 3565, 1042, 6268], 'col_6': [7082, 548, 5427, 1961, 6349], 'col_7': [9056, 22, 3876, 4398, 3193], 'col_8': [2232, 882, 4591, 6383, 5369], 'col_9': [6122, 9763, 3747, 8603, 9338], 'col_10': [740, 7691, 7129, 9141, 187]}
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_count = sum(df['col_3'].apply(is_prime))
+prime_count
+```
+2023-08-05 16:17:00 [INFO] Answer: 4940
+2023-08-05 16:17:00 [INFO] Executed in: 0.06087207794189453s
+2023-08-05 16:17:00 [INFO] Question: Show me all the compounds that are associated with humans.
+2023-08-05 16:17:00 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:17:00 [INFO] Prompt ID: 467e6059-95a8-4990-8271-5e68062ce403
+2023-08-05 16:17:02 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Organism'] == 'Homo sapiens']['Compounds']
+                        ```
+                    
+2023-08-05 16:17:02 [INFO] 
+Code running:
+```
+df[df['Organism'] == 'Homo sapiens']['Compounds']
+```
+2023-08-05 16:17:02 [WARNING] Error executing code (count: 0)
+2023-08-05 16:17:14 [INFO] Question: Find the number of prime numbers in the column, col_3.
+2023-08-05 16:17:14 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:17:14 [INFO] Prompt ID: fc50e7e4-b474-4691-bb0c-1f309e9e361d
+2023-08-05 16:17:14 [INFO] Using cached response
+2023-08-05 16:17:14 [INFO] 
+Code running:
+```
+data = {'col_1': [2104, 2848, 3604, 5723, 2353], 'col_2': [2339, 8279, 539, 3136, 3411], 'col_3': [3607, 6712, 7081, 7249, 352], 'col_4': [112, 3694, 690, 6921, 8904], 'col_5': [3845, 2698, 3565, 1042, 6268], 'col_6': [7082, 548, 5427, 1961, 6349], 'col_7': [9056, 22, 3876, 4398, 3193], 'col_8': [2232, 882, 4591, 6383, 5369], 'col_9': [6122, 9763, 3747, 8603, 9338], 'col_10': [740, 7691, 7129, 9141, 187]}
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_count = sum(df['col_3'].apply(is_prime))
+prime_count
+```
+2023-08-05 16:17:14 [INFO] Answer: 4733
+2023-08-05 16:17:14 [INFO] Executed in: 0.06004023551940918s
+2023-08-05 16:17:14 [INFO] Question: Show me all the compounds that are associated with Homo sapiens.
+2023-08-05 16:17:14 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:17:14 [INFO] Prompt ID: 083e090c-d9bd-4296-973b-088eb5b96d00
+2023-08-05 16:17:15 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Organism'] == 'Homo sapiens']['Compounds']
+                        ```
+                    
+2023-08-05 16:17:15 [INFO] 
+Code running:
+```
+df[df['Organism'] == 'Homo sapiens']['Compounds']
+```
+2023-08-05 16:17:15 [WARNING] Error executing code (count: 0)
+2023-08-05 16:18:00 [INFO] Question: Find the number of prime numbers in the column, col_3.
+2023-08-05 16:18:00 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:18:00 [INFO] Prompt ID: 1fd10f4f-4ca3-4d05-895a-e33a45e08c7e
+2023-08-05 16:18:00 [INFO] Using cached response
+2023-08-05 16:18:00 [INFO] 
+Code running:
+```
+data = {'col_1': [2104, 2848, 3604, 5723, 2353], 'col_2': [2339, 8279, 539, 3136, 3411], 'col_3': [3607, 6712, 7081, 7249, 352], 'col_4': [112, 3694, 690, 6921, 8904], 'col_5': [3845, 2698, 3565, 1042, 6268], 'col_6': [7082, 548, 5427, 1961, 6349], 'col_7': [9056, 22, 3876, 4398, 3193], 'col_8': [2232, 882, 4591, 6383, 5369], 'col_9': [6122, 9763, 3747, 8603, 9338], 'col_10': [740, 7691, 7129, 9141, 187]}
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_count = sum(df['col_3'].apply(is_prime))
+prime_count
+```
+2023-08-05 16:18:00 [INFO] Answer: 4777
+2023-08-05 16:18:00 [INFO] Executed in: 0.05944705009460449s
+2023-08-05 16:18:00 [INFO] Question: Show me all the rows where the Organism is Homo sapiens.
+2023-08-05 16:18:00 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:18:00 [INFO] Prompt ID: 7c2d56b3-d7d1-4365-91b2-a842ecb05d28
+2023-08-05 16:18:08 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+data = {'ChEMBL ID': ['CHEMBL2150840', 'CHEMBL4421', 'CHEMBL4523901', 'CHEMBL5872', 'CHEMBL3085617'],
+        'Name': ['2-oxoglutarate receptor 1', 'HM74 nicotinic acid GPCR', 'Probable G-protein coupled receptor 148',
+                 'G-protein coupled estrogen receptor 1', 'Probable G-protein coupled receptor 151'],
+        'UniProt Accessions': ['Q96P68', 'P49019', 'Q8TDV2', 'Q99527', 'Q8TDV0'],
+        'Type': ['SINGLE PROTEIN', 'SINGLE PROTEIN', 'SINGLE PROTEIN', 'SINGLE PROTEIN', 'SINGLE PROTEIN'],
+        'Organism': ['Homo sapiens', 'Homo sapiens', 'Homo sapiens', 'Homo sapiens', 'Homo sapiens'],
+        'Compounds': [9, 285, 1, 32, 2],
+        'Activities': [9, 353, 1, 110, 2],
+        'Tax ID': [9606, 9606, 9606, 9606, 9606],
+        'Species Group Flag': [False, False, False, False, False]}
+
+df = pd.DataFrame(data)
+
+filtered_df = df[df['Organism'] == 'Homo sapiens']
+filtered_df
+                        ```
+                    
+2023-08-05 16:18:08 [INFO] 
+Code running:
+```
+data = {'ChEMBL ID': ['CHEMBL2150840', 'CHEMBL4421', 'CHEMBL4523901', 'CHEMBL5872', 'CHEMBL3085617'], 'Name': ['2-oxoglutarate receptor 1', 'HM74 nicotinic acid GPCR', 'Probable G-protein coupled receptor 148', 'G-protein coupled estrogen receptor 1', 'Probable G-protein coupled receptor 151'], 'UniProt Accessions': ['Q96P68', 'P49019', 'Q8TDV2', 'Q99527', 'Q8TDV0'], 'Type': ['SINGLE PROTEIN', 'SINGLE PROTEIN', 'SINGLE PROTEIN', 'SINGLE PROTEIN', 'SINGLE PROTEIN'], 'Organism': ['Homo sapiens', 'Homo sapiens', 'Homo sapiens', 'Homo sapiens', 'Homo sapiens'], 'Compounds': [9, 285, 1, 32, 2], 'Activities': [9, 353, 1, 110, 2], 'Tax ID': [9606, 9606, 9606, 9606, 9606], 'Species Group Flag': [False, False, False, False, False]}
+filtered_df = df[df['Organism'] == 'Homo sapiens']
+filtered_df
+```
+2023-08-05 16:18:08 [WARNING] Error executing code (count: 0)
+2023-08-05 16:18:47 [INFO] Question: Find the number of prime numbers in the column, col_3.
+2023-08-05 16:18:47 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:18:47 [INFO] Prompt ID: 670ed87e-7b41-4871-a9d8-9f0325f4fb62
+2023-08-05 16:18:47 [INFO] Using cached response
+2023-08-05 16:18:47 [INFO] 
+Code running:
+```
+data = {'col_1': [2104, 2848, 3604, 5723, 2353], 'col_2': [2339, 8279, 539, 3136, 3411], 'col_3': [3607, 6712, 7081, 7249, 352], 'col_4': [112, 3694, 690, 6921, 8904], 'col_5': [3845, 2698, 3565, 1042, 6268], 'col_6': [7082, 548, 5427, 1961, 6349], 'col_7': [9056, 22, 3876, 4398, 3193], 'col_8': [2232, 882, 4591, 6383, 5369], 'col_9': [6122, 9763, 3747, 8603, 9338], 'col_10': [740, 7691, 7129, 9141, 187]}
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_count = sum(df['col_3'].apply(is_prime))
+prime_count
+```
+2023-08-05 16:18:47 [INFO] Answer: 4873
+2023-08-05 16:18:47 [INFO] Executed in: 0.06107592582702637s
+2023-08-05 16:18:47 [INFO] Question: Show me all the rows where the Organism is Homo sapiens.
+2023-08-05 16:18:47 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:18:47 [INFO] Prompt ID: a0d2e1d6-70b1-4a56-831e-129712eccd28
+2023-08-05 16:18:47 [INFO] Using cached response
+2023-08-05 16:18:47 [INFO] 
+Code running:
+```
+data = {'ChEMBL ID': ['CHEMBL2150840', 'CHEMBL4421', 'CHEMBL4523901', 'CHEMBL5872', 'CHEMBL3085617'], 'Name': ['2-oxoglutarate receptor 1', 'HM74 nicotinic acid GPCR', 'Probable G-protein coupled receptor 148', 'G-protein coupled estrogen receptor 1', 'Probable G-protein coupled receptor 151'], 'UniProt Accessions': ['Q96P68', 'P49019', 'Q8TDV2', 'Q99527', 'Q8TDV0'], 'Type': ['SINGLE PROTEIN', 'SINGLE PROTEIN', 'SINGLE PROTEIN', 'SINGLE PROTEIN', 'SINGLE PROTEIN'], 'Organism': ['Homo sapiens', 'Homo sapiens', 'Homo sapiens', 'Homo sapiens', 'Homo sapiens'], 'Compounds': [9, 285, 1, 32, 2], 'Activities': [9, 353, 1, 110, 2], 'Tax ID': [9606, 9606, 9606, 9606, 9606], 'Species Group Flag': [False, False, False, False, False]}
+filtered_df = df[df['Organism'] == 'Homo sapiens']
+filtered_df
+```
+2023-08-05 16:18:48 [INFO] Answer:        ChEMBL ID                                     Name UniProt Accessions            Type      Organism  Compounds  Activities  Tax ID  Species Group Flag
+0  CHEMBL4523901  Probable G-protein coupled receptor 148             Q8TDV2  SINGLE PROTEIN  Homo sapiens          1           1    9606               False
+1  CHEMBL2150840                2-oxoglutarate receptor 1             Q96P68  SINGLE PROTEIN  Homo sapiens          9           9    9606               False
+2     CHEMBL5872    G-protein coupled estrogen receptor 1             Q99527  SINGLE PROTEIN  Homo sapiens         32         110    9606               False
+3     CHEMBL4421                 HM74 nicotinic acid GPCR             P49019  SINGLE PROTEIN  Homo sapiens        285         353    9606               False
+4  CHEMBL3085617  Probable G-protein coupled receptor 151             Q8TDV0  SINGLE PROTEIN  Homo sapiens          2           2    9606               False
+2023-08-05 16:18:48 [INFO] Executed in: 0.016835927963256836s
+2023-08-05 16:19:18 [INFO] Question: Find the number of prime numbers in the column, col_3.
+2023-08-05 16:19:18 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:19:18 [INFO] Prompt ID: 5905239e-6bf4-4eb9-992d-737b2f4ac7e6
+2023-08-05 16:19:18 [INFO] Using cached response
+2023-08-05 16:19:18 [INFO] 
+Code running:
+```
+data = {'col_1': [2104, 2848, 3604, 5723, 2353], 'col_2': [2339, 8279, 539, 3136, 3411], 'col_3': [3607, 6712, 7081, 7249, 352], 'col_4': [112, 3694, 690, 6921, 8904], 'col_5': [3845, 2698, 3565, 1042, 6268], 'col_6': [7082, 548, 5427, 1961, 6349], 'col_7': [9056, 22, 3876, 4398, 3193], 'col_8': [2232, 882, 4591, 6383, 5369], 'col_9': [6122, 9763, 3747, 8603, 9338], 'col_10': [740, 7691, 7129, 9141, 187]}
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_count = sum(df['col_3'].apply(is_prime))
+prime_count
+```
+2023-08-05 16:19:18 [INFO] Answer: 4998
+2023-08-05 16:19:18 [INFO] Executed in: 0.06142115592956543s
+2023-08-05 16:19:18 [INFO] Question: Show me all the compounds that are associated with humans.
+2023-08-05 16:19:18 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:19:18 [INFO] Prompt ID: 360f9912-e718-4216-bfd9-208385d1fe57
+2023-08-05 16:19:18 [INFO] Using cached response
+2023-08-05 16:19:18 [INFO] 
+Code running:
+```
+df[df['Organism'] == 'Homo sapiens']['Compounds']
+```
+2023-08-05 16:19:18 [INFO] Answer: 0      1
+1      9
+2     32
+3    285
+4      2
+Name: Compounds, dtype: int64
+2023-08-05 16:19:18 [INFO] Executed in: 0.002622842788696289s
+2023-08-05 16:20:12 [INFO] Question: Find the number of prime numbers in the column, col_3.
+2023-08-05 16:20:12 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:20:12 [INFO] Prompt ID: 8a6f3441-7625-4c43-983f-7a32ef4f5fec
+2023-08-05 16:20:12 [INFO] Using cached response
+2023-08-05 16:20:12 [INFO] 
+Code running:
+```
+data = {'col_1': [2104, 2848, 3604, 5723, 2353], 'col_2': [2339, 8279, 539, 3136, 3411], 'col_3': [3607, 6712, 7081, 7249, 352], 'col_4': [112, 3694, 690, 6921, 8904], 'col_5': [3845, 2698, 3565, 1042, 6268], 'col_6': [7082, 548, 5427, 1961, 6349], 'col_7': [9056, 22, 3876, 4398, 3193], 'col_8': [2232, 882, 4591, 6383, 5369], 'col_9': [6122, 9763, 3747, 8603, 9338], 'col_10': [740, 7691, 7129, 9141, 187]}
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_count = sum(df['col_3'].apply(is_prime))
+prime_count
+```
+2023-08-05 16:20:12 [INFO] Answer: 5059
+2023-08-05 16:20:12 [INFO] Executed in: 0.06089591979980469s
+2023-08-05 16:20:12 [INFO] Question: Show me all the compounds with CHEMBL IDs that are associated with humans.
+2023-08-05 16:20:12 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:20:12 [INFO] Prompt ID: cdf53305-99c2-4df9-8624-5be3dcfcf087
+2023-08-05 16:20:14 [INFO] 
+                        Code generated:
+                        ```
+                        human_compounds = df[df['Organism'] == 'Homo sapiens']['Compounds']
+human_compounds
+                        ```
+                    
+2023-08-05 16:20:14 [INFO] 
+Code running:
+```
+human_compounds = df[df['Organism'] == 'Homo sapiens']['Compounds']
+human_compounds
+```
+2023-08-05 16:20:14 [INFO] Answer: 0      1
+1      9
+2     32
+3    285
+4      2
+Name: Compounds, dtype: int64
+2023-08-05 16:20:14 [INFO] Executed in: 1.8490691184997559s
+2023-08-05 16:20:34 [INFO] Question: Find the number of prime numbers in the column, col_3.
+2023-08-05 16:20:34 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:20:34 [INFO] Prompt ID: 72bb7b83-5e89-4275-a7c2-1e96df767525
+2023-08-05 16:20:34 [INFO] Using cached response
+2023-08-05 16:20:34 [INFO] 
+Code running:
+```
+data = {'col_1': [2104, 2848, 3604, 5723, 2353], 'col_2': [2339, 8279, 539, 3136, 3411], 'col_3': [3607, 6712, 7081, 7249, 352], 'col_4': [112, 3694, 690, 6921, 8904], 'col_5': [3845, 2698, 3565, 1042, 6268], 'col_6': [7082, 548, 5427, 1961, 6349], 'col_7': [9056, 22, 3876, 4398, 3193], 'col_8': [2232, 882, 4591, 6383, 5369], 'col_9': [6122, 9763, 3747, 8603, 9338], 'col_10': [740, 7691, 7129, 9141, 187]}
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_count = sum(df['col_3'].apply(is_prime))
+prime_count
+```
+2023-08-05 16:20:34 [INFO] Answer: 4850
+2023-08-05 16:20:34 [INFO] Executed in: 0.06003928184509277s
+2023-08-05 16:20:34 [INFO] Question: Filter the rows that are associated with humans.
+2023-08-05 16:20:34 [INFO] Running PandasAI with openai LLM...
+2023-08-05 16:20:34 [INFO] Prompt ID: bb8a8a8c-518f-4a1a-b7a4-96d6d5ec740e
+2023-08-05 16:20:35 [INFO] 
+                        Code generated:
+                        ```
+                        df_human = df[df['Organism'] == 'Homo sapiens']
+df_human
+                        ```
+                    
+2023-08-05 16:20:35 [INFO] 
+Code running:
+```
+df_human = df[df['Organism'] == 'Homo sapiens']
+df_human
+```
+2023-08-05 16:20:35 [INFO] Answer:        ChEMBL ID                                     Name UniProt Accessions            Type      Organism  Compounds  Activities  Tax ID  Species Group Flag
+0  CHEMBL4523901  Probable G-protein coupled receptor 148             Q8TDV2  SINGLE PROTEIN  Homo sapiens          1           1    9606               False
+1  CHEMBL2150840                2-oxoglutarate receptor 1             Q96P68  SINGLE PROTEIN  Homo sapiens          9           9    9606               False
+2     CHEMBL5872    G-protein coupled estrogen receptor 1             Q99527  SINGLE PROTEIN  Homo sapiens         32         110    9606               False
+3     CHEMBL4421                 HM74 nicotinic acid GPCR             P49019  SINGLE PROTEIN  Homo sapiens        285         353    9606               False
+4  CHEMBL3085617  Probable G-protein coupled receptor 151             Q8TDV0  SINGLE PROTEIN  Homo sapiens          2           2    9606               False
+2023-08-05 16:20:35 [INFO] Executed in: 1.4607899188995361s
