@@ -44,7 +44,7 @@ docker-compose up -d
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/compound-query-app.git
+git clone https://github.com/ReetuData/compound-query-app.git
 
 # Navigate to the application root folder
 cd compound-query-app
