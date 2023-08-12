@@ -25,7 +25,7 @@ Make sure you have Python 3.6+ installed on your machine. You can then follow th
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/compound-query-app.git
+git clone https://github.com/ReetuData/compound-query-app.git
 
 # Navigate to the application root folder
 cd compound-query-app
